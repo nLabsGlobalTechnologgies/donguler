@@ -9,10 +9,12 @@ namespace Donguler
 
         private void button1_Click(object sender, EventArgs e)
         {
-            for (int i = 1; i <= 25; i++)
+            int toplam = 0;
+            for (int i = 1; i <= 10; i++)
             {
-                listBox1.Items.Add($"Veri Eklendi {i}");
+                toplam = toplam + i;
             }
+            label1.Text = "Toplam Sonuç : " + toplam.ToString();
         }
     }
 }
