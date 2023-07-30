@@ -34,12 +34,19 @@
             // 
             // listBox1
             // 
+<<<<<<< Updated upstream
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
             listBox1.Location = new Point(31, 12);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(229, 364);
             listBox1.TabIndex = 0;
+=======
+            progres.Location = new Point(12, 30);
+            progres.Name = "progres";
+            progres.Size = new Size(762, 99);
+            progres.TabIndex = 0;
+>>>>>>> Stashed changes
             // 
             // button1
             // 
