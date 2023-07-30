@@ -3,12 +3,12 @@
     partial class Form1
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,49 +23,61 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
-            button1 = new Button();
+            progres = new ProgressBar();
+            btPositive = new Button();
+            btNegative = new Button();
             SuspendLayout();
             // 
-            // listBox1
+            // progres
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(31, 12);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(229, 364);
-            listBox1.TabIndex = 0;
+            progres.Location = new Point(12, 30);
+            progres.Maximum = 90;
+            progres.Name = "progres";
+            progres.Size = new Size(762, 99);
+            progres.TabIndex = 0;
             // 
-            // button1
+            // btPositive
             // 
-            button1.Location = new Point(414, 326);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 1;
-            button1.Text = "Yazdır";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btPositive.Location = new Point(12, 151);
+            btPositive.Name = "btPositive";
+            btPositive.Size = new Size(191, 111);
+            btPositive.TabIndex = 1;
+            btPositive.Text = "+";
+            btPositive.UseVisualStyleBackColor = true;
+            btPositive.Click += btPositive_Click;
+            // 
+            // btNegative
+            // 
+            btNegative.Location = new Point(583, 151);
+            btNegative.Name = "btNegative";
+            btNegative.Size = new Size(191, 111);
+            btNegative.TabIndex = 1;
+            btNegative.Text = "-";
+            btNegative.UseVisualStyleBackColor = true;
+            btNegative.Click += btNegative_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Controls.Add(listBox1);
+            ClientSize = new Size(800, 289);
+            Controls.Add(btNegative);
+            Controls.Add(btPositive);
+            Controls.Add(progres);
             Name = "Form1";
-            Text = "Form1";
+            Text = "frm";
             ResumeLayout(false);
         }
 
         #endregion
 
-        private ListBox listBox1;
-        private Button button1;
+        private ProgressBar progres;
+        private Button btPositive;
+        private Button btNegative;
     }
 }
