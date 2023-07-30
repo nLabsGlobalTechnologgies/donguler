@@ -1,6 +1,6 @@
 ﻿namespace Donguler
 {
-    partial class frm
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.

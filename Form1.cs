@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Donguler
 {
-    public partial class frm : Form
+    public partial class Form1 : Form
     {
-        public frm()
+        public Form1()
         {
             InitializeComponent();
         }
