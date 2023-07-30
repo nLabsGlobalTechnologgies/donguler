@@ -36,6 +36,7 @@
             // progres
             // 
             progres.Location = new Point(12, 30);
+            progres.Maximum = 90;
             progres.Name = "progres";
             progres.Size = new Size(762, 99);
             progres.TabIndex = 0;
@@ -60,7 +61,7 @@
             btNegative.UseVisualStyleBackColor = true;
             btNegative.Click += btNegative_Click;
             // 
-            // frm
+            // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -68,7 +69,7 @@
             Controls.Add(btNegative);
             Controls.Add(btPositive);
             Controls.Add(progres);
-            Name = "frm";
+            Name = "Form1";
             Text = "frm";
             ResumeLayout(false);
         }

@@ -20,27 +20,27 @@ namespace Donguler
 
         private void btPositive_Click(object sender, EventArgs e)
         {
-            if (progres.Value != 100)
+            if (progres.Value != progres.Maximum)
             {
                 progres.Value = pbar + 10;
                 pbar = progres.Value;
             }
             else
             {
-                MessageBox.Show("Zaten 100");
+                MessageBox.Show($"Zaten {progres.Maximum} daha fazla olamaz");
             }
         }
 
         private void btNegative_Click(object sender, EventArgs e)
         {
-            if (progres.Value != 0)
+            if (progres.Value != progres.Minimum)
             {
                 progres.Value = pbar - 10;
                 pbar = progres.Value;
             }
             else
             {
-                MessageBox.Show("Zaten 0");
+                MessageBox.Show($"Zaten {progres.Minimum} daha az olamaz");
             }
         }
     }
